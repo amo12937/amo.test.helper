@@ -54,10 +54,8 @@ do (that = @, name = ".amo") ->
         ["b", 2]
         ["c", undefined]
       ]
-
       runBlock = (prop, expected) ->
         expect(@[prop]).toBe expected
-
       thisArg =
         a: 1
         b: 2
